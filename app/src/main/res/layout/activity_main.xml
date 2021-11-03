@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <EditText
-        android:id="@+id/tvTitle"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="30dp"
-        android:textSize="30sp"
-        android:hint="标题"/>
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/white"
+                android:textSize="40sp"
+                android:textColor="@color/her_color"
+                android:paddingLeft="10dp"
+                android:hint="标题"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="10dp"
+                android:src="@drawable/horizontal_rule_24"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tvTitle"/>
 
-    <EditText
-        android:id="@+id/tvNote"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_centerHorizontal="true"
-        android:paddingHorizontal="10dp"
-        android:background="@color/white"
-        android:layout_below="@+id/tvTitle"
-        android:hint="在此处输入正文......"
-        android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/tvNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="start"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="20dp"
+                android:layout_below="@+id/tvTitle"
+                android:hint="在此处输入正文......"
+                android:textSize="20dp"
+                android:textColor="@color/her_color"/>
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
