@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="30sp"
+        android:hint="标题"/>
+
+    <EditText
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/tvTitle"
+        android:hint="在此处输入正文......"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
